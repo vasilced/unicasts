@@ -3,12 +3,17 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12 m-1">
-                <div class="card">
-                    <div class="card-body">
-                        <p class="card-title"> {{ $episode->title }} </p>
-                        <p class="card-text"> {{ $episode->description }} </p>
-                    </div>
-                </div>
+                <h1> {{ $episode->title }} </h1>
+                <hr />
+
+                <p> {{ $episode->description }} </p>
+
+                <span><u><b>notes:</b></u></span>
+
+                @foreach($episode->notes as $note)
+                    <div> &ndash; {{ $note->summary }} </div>
+                @endforeach
+
             </div>
         </div>
     </div>

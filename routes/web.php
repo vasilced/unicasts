@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('episodes.index');
+    return redirect('/episodes');
 });
 
 Auth::routes();

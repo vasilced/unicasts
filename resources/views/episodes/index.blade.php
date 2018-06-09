@@ -11,9 +11,9 @@
                     <div class="card">
                         <div class="card-body">
                             <a href=" {{ route('episodes.show', $episode) }}">
-                                <p class="card-title"> {{ $episode->title }} </p>
+                                <p class="card-title text-capitalize"> {{ $episode->title }} </p>
                             </a>
-                            <p class="card-text"> {{ $episode->description }} </p>
+                            <p class="card-text font-weight-bold"> {{ $episode->description }} </p>
                         </div>
                     </div>
                 </div>

@@ -7,7 +7,7 @@ $factory->define(App\Episode::class, function (Faker $faker) {
         'podcast_id' => function() {
             return factory('App\Podcast')->create()->id;
         },
-        'title' => $faker->text,
+        'title' => $faker->word,
         'description' => $faker->paragraph,
     ];
 });
