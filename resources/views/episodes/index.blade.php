@@ -17,5 +17,10 @@
                 </div>
             @endforeach
         </div>
+
+        <div class="m-1">
+             {{ $episodes->links() }}
+        </div>
+
     </div>
 @endsection
