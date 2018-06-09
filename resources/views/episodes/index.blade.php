@@ -6,15 +6,16 @@
         <hr />
         
         <div class="row">
-            <div class="col-md-12">
-
-                <div class="card">
-                    <div class="card-body">
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            @foreach($episodes as $episode)
+                <div class="col-md-12 m-1">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-title"> {{ $episode->title }} </p>
+                            <p class="card-text"> {{ $episode->description }} </p>
+                        </div>
                     </div>
                 </div>
-
-            </div>
+            @endforeach
         </div>
     </div>
     <div style="padding-top:150px">

@@ -14,7 +14,9 @@ class EpisodeController extends Controller
      */
     public function index()
     {
-        //
+        $episodes = Episode::paginate(25);
+
+        return view('episodes.index', compact('episodes'));
     }
 
     /**
@@ -46,7 +48,7 @@ class EpisodeController extends Controller
      */
     public function show(Episode $episode)
     {
-        //
+        return view('episodes.show', compact('episode'));
     }
 
     /**
