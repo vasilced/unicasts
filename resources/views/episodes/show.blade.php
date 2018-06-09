@@ -12,11 +12,17 @@
 
                 @foreach($episode->notes as $note)
                     <div> &ndash; {{ $note->summary }} </div>
+                        @foreach($note->links as $link)
+                            <div> <a href="{{ $link->path }}">{{ $link->path }} </a> </div>
+                        @endforeach
                 @endforeach
 
             </div>
         </div>
-        <a href=" {{ route('episodes.index') }}" class="btn btn-outline-primary btn-block m-1">Back to all episodes</a>
+        <a href=" {{ route('episodes.index') }}" 
+           class="btn btn-outline-primary btn-block m-1">
+           Back to all episodes
+        </a>
     </div>
 
 @endsection
