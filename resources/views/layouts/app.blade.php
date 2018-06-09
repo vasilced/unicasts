@@ -74,5 +74,12 @@
             @yield('content')
         </main>
     </div>
+
+     <div style="padding-top:150px">
+        <div>       
+            <p style="text-align:center;"><small><b>&copy; Unicasts 2018</b></small></p>
+        </div>
+    </div>
+    
 </body>
 </html>

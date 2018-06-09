@@ -10,7 +10,9 @@
                 <div class="col-md-12 m-1">
                     <div class="card">
                         <div class="card-body">
-                            <p class="card-title"> {{ $episode->title }} </p>
+                            <a href=" {{ route('episodes.show', $episode) }}">
+                                <p class="card-title"> {{ $episode->title }} </p>
+                            </a>
                             <p class="card-text"> {{ $episode->description }} </p>
                         </div>
                     </div>
@@ -18,14 +20,8 @@
             @endforeach
         </div>
 
-        <div class="m-1">
-             {{ $episodes->links() }}
-        </div>
+        <span class="m-1"> {{ $episodes->links() }} </span>
 
     </div>
-    <div style="padding-top:150px">
-        <div>       
-            <p style="text-align:center;"><small><b>&copy; Unicasts 2018</b></small></p>
-        </div>
-    </div>
+    
 @endsection
