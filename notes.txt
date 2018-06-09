@@ -1,0 +1,4 @@
+Models:
+  - Podcast
+  - Episode
+  - Note
