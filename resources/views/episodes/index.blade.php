@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
     <div class="container">
-        <h1>Welcome to Unicasts!</h1>
+        <h1 style="text-align:center">Welcome to Unicasts!</h1>
                 
         <hr />
         
@@ -22,5 +22,10 @@
              {{ $episodes->links() }}
         </div>
 
+    </div>
+    <div style="padding-top:150px">
+        <div>       
+            <p style="text-align:center;"><small><b>&copy; Unicasts 2018</b></small></p>
+        </div>
     </div>
 @endsection
