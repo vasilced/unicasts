@@ -16,7 +16,7 @@
 
             </div>
         </div>
-        <a href="{{ url()->previous() }}" class="btn btn-default">Back</a>
+        <a href=" {{ route('episodes.index') }}" class="btn btn-outline-primary btn-block m-1">Back to all episodes</a>
     </div>
 
 @endsection
